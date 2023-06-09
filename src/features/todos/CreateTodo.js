@@ -7,8 +7,6 @@ function CreateTodo() {
   const dispatch = useDispatch();
   const [text, setText] = useState("");
 
-  console.log(todos);
-
   function handleChange(event) {
     setText(event.target.value);
   }
@@ -33,8 +31,6 @@ function CreateTodo() {
         <input type="submit" />
       </form>
       <p>Form Text: {text}</p>
-
-      <p>Your ToDo List:</p>
     </div>
   );
 }
